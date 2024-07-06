@@ -1,5 +1,5 @@
-# GameOfLife
-GameOfLife Application with SyCL
+# Boids
+Boids Application with SyCL
 
 ## Used libraries
 - SYCL

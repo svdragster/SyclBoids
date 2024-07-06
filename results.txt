@@ -1,0 +1,27 @@
+CPU: i9-13900K (32) @ 5.500GHz
+No threading, 1000 Boids: 5 ms
+OpenMP, 2500 Boids: 5 ms
+Sycl OpenMP, 2500 Boids: 5 ms
+
+GPU: AMD Radeon RX 7900 XTX (Hip backend)
+Sycl: 12500-15000 Boids: 5 ms
+
+With SYCL: 2 seconds
+With OpenMP: 1 second
+
+AMD Radeon RX 7900 XTX
+2 seconds
+
+-> [AdaptiveCpp Warning] kernel_cache: This application run has resulted in new binaries being JIT-compiled. This indicates that the runtime optimization process has not yet reached peak performance. You may want to run the application again until this warning no longer appears to achieve optimal performance.
+
+
+
+
+GameOfLife 5,000 iterations
+
+CPU i9-13900K (32) @ 5.500GHz
+Without SYCL: 20 seconds
+With SYCL: 7.8 seconds
+
+AMD Radeon RX 7900 XTX
+2 seconds

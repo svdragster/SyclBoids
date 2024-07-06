@@ -36,6 +36,9 @@ compile_commands.json
 
 # build stuff
 build/
-gameoflife
+boids
 .cache/
 *.jpg
+
+# jetbrains
+.idea

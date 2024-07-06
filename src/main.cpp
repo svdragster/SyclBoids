@@ -94,8 +94,8 @@ int main(int argc, char **argv) {
 
     std::vector <Boid> boids = Boids::create_boids(width, height, amount);
 
-    sycl::gpu_selector selector;
-    //sycl::cpu_selector selector;
+    //sycl::gpu_selector selector;
+    sycl::cpu_selector selector;
     sycl::queue queue(selector);
 
 
@@ -103,13 +103,17 @@ int main(int argc, char **argv) {
 
     SDL_Event e;
     while (!quit) {
-        SDL_PollEvent(&e);
-        switch (e.type) {
-            case SDL_KEYDOWN:
-                if (e.key.keysym.sym == SDLK_q) {
+        while (!quit && SDL_PollEvent(&e)) {
+            switch (e.type) {
+                case SDL_KEYDOWN:
+                    if (e.key.keysym.sym == SDLK_q) {
+                        quit = true;
+                    }
+                    break;
+                case SDL_QUIT:
                     quit = true;
-                }
-                break;
+                    break;
+            }
         }
         auto start_time = high_resolution_clock::now();
         if (cpu) {

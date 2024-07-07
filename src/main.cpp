@@ -94,8 +94,8 @@ int main(int argc, char **argv) {
 
     std::vector <Boid> boids = Boids::create_boids(width, height, amount);
 
-    //sycl::gpu_selector selector;
-    sycl::cpu_selector selector;
+    sycl::gpu_selector selector;
+    //sycl::cpu_selector selector;
     sycl::queue queue(selector);
 
 

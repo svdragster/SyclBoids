@@ -2,6 +2,7 @@
 Boids Application with SyCL
 
 https://github.com/user-attachments/assets/b5f26136-a42e-4b27-a638-1593c59b44ff
+
 (15,000 boids rendered in realtime on GPU)
 
 ## Used libraries

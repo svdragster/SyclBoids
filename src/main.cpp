@@ -130,11 +130,6 @@ int main(int argc, char **argv) {
     }
 
 
-
-    //render_on_surfaces(width, height, window, window_surface, frames);
-
-    //render_frames_directly(width, height, renderer, frames);
-
     // Clean up SDL
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);

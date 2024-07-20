@@ -35,7 +35,7 @@ const double MATCHING_FACTOR = 0.05;
 const double AVOID_FACTOR = 0.1;
 const double TURN_FACTOR = 0.2;
 const double MIN_SPEED = 1.0;
-const double MAX_SPEED = 1.6q;
+const double MAX_SPEED = 1.6;
 
 class Boid {
 public:
